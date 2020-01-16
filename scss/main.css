@@ -353,7 +353,7 @@ body {
           box-sizing: border-box;
   background-color: #0e3260;
   text-align: right;
-  background-image: url(/assets/img/hero-image.jpg);
+  background-image: url("../assets/img/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto 50vw;
@@ -362,7 +362,7 @@ body {
 
 .hero-banner .cover-and-save-roundal {
   position: absolute;
-  background-image: url(/assets/svg/roundal.svg);
+  background-image: url("../assets/svg/roundal.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 250px;
@@ -1025,20 +1025,20 @@ body {
 }
 
 .need-help-section .useful-guide-tiles .why-direct-gap-tile {
-  background-image: url(/assets/img/smiling-driver.png);
+  background-image: url("../assets/img/smiling-driver.png");
 }
 
 .need-help-section .useful-guide-tiles .what-is-gap-tile {
-  background-image: url(/assets/img/gap-car.png);
+  background-image: url("../assets/img/gap-car.png");
   background-position: 50% 25%;
 }
 
 .need-help-section .useful-guide-tiles .general-exclusions-tile {
-  background-image: url(/assets/img/car-dash.png);
+  background-image: url("../assets/img/car-dash.png");
 }
 
 .need-help-section .useful-guide-tiles .which-policy-tile {
-  background-image: url(/assets/img/insurance-docs.png);
+  background-image: url("../assets/img/insurance-docs.png");
 }
 
 .need-help-section .useful-guide-tiles h2 {
