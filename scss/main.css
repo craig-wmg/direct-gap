@@ -353,7 +353,7 @@ body {
           box-sizing: border-box;
   background-color: #0e3260;
   text-align: right;
-  background-image: url("../assets/img/hero-image.jpg");
+  background-image: url("assets/img/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto 50vw;
@@ -958,7 +958,7 @@ body {
 
 .why-choose-bottom .why-choose-bottom-container ul li {
   padding-left: 2rem;
-  background-image: url(/assets/svg/tick.svg);
+  background-image: url("../assets/svg/tick.svg");
   background-position: 23px 0;
   background-size: 1.6rem 1.6rem;
   background-repeat: no-repeat;
