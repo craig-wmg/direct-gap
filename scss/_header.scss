@@ -1,0 +1,187 @@
+.navbar {margin-top: 8px;}
+
+.navbar-top-section {
+    background-color: white; 
+    max-width: $main-container;
+    padding: 0px 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.call-cta {
+    border: 1px solid $primary-blue;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+        background-color: $primary-blue;
+        .phone-icon-blue > svg > path {
+            fill: #ffffff;
+        }
+        p {
+            color: white;
+        }
+    }
+    .phone-icon-blue {
+        padding-right: 10px;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .call-cta-phone-no {
+        font-size: 15pt;
+        font-weight: 600;
+        color: $primary-blue;
+    }
+    .call-cta-times {
+        font-size: 9pt;
+        color: #575757;
+    }
+}
+
+.main-nav-logo img {
+    max-width: 250px;
+}
+
+.navbar-main-nav {
+    background-color: $grey-bg;
+    display: flex;
+
+    .nav-sub-items {
+        position: relative;
+        ul {
+            display: none;
+            position: absolute;
+            z-index: 9999;
+            background-color: white;
+            padding: 16px 10px 5px 10px;
+            width: 220px;
+            top: 48px;
+
+            li {
+                margin-bottom: 15px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    transition: 0.2s;
+
+                    &:hover {
+                        padding-left: 7px;
+                        transition: 0.2s;
+                        color: #0D6A9C;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-main-nav-container {
+        max-width: 1280px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > div {
+                > #navbar-a-login {
+                    > img {
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        margin-bottom: 2px;
+                        display: inline-block;
+                    }
+                }
+               > a, > div {
+                padding: 0px 10px;
+                color: $primary-blue;
+                height: 65px;
+                display: flex;
+                align-items: center;
+                 i {
+                    transition: 0.2s;
+                }
+                &:hover {
+                    color: #0D6A9C;
+                    cursor: pointer;
+                }
+                &:hover  i {
+                    border: solid #0D6A9C;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    transform: rotate(45deg) translateY(-2px);
+                    -webkit-transition: 0.2s;
+                    transition: 0.2s;
+                }
+                &:hover > svg circle, &:hover > svg path {
+                    fill:  #0D6A9C;
+                }
+            }
+        }
+        .navbar-get-quote-cta {
+            background-image: $gold-background;
+            color: $primary-blue;
+            padding: 15px 0px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+            max-width: 225px;
+            text-align: center;
+            width: 100%;
+
+            &:hover {
+                background-image: $gold-background-hover;
+            }
+        }
+    }
+}
+
+.navbar-usps {
+    background-color: white;
+    padding: 0px 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 99;
+    position: relative;
+
+    .navbar-usp-container {
+        max-width: 1280px;
+        padding: 15px 0px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            display: flex;
+        }
+
+        img {
+            max-width: 25px;
+            vertical-align: middle;
+            margin: 0px 10px 3px 0px;
+            display: inline-block;
+        }
+    }
+}
