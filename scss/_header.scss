@@ -286,9 +286,6 @@
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-    #nav-burger-icon {
-        transform: scale(0.7);
-    }
   }
 
 
@@ -307,6 +304,9 @@
 
 @media screen and (max-width: 670px) {
 
+    #nav-burger-icon {
+        transform: scale(0.7);
+    }
 
     .navbar-main-nav .navbar-main-nav-container .navbar-get-quote-cta {
         width: 60%;
