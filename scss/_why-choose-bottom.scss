@@ -56,3 +56,22 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .why-choose-bottom {
+        padding: 40px 15px;
+    
+        .why-choose-bottom-container {
+
+            ul {
+                columns: 1;
+                padding-left: 0;
+              }
+            .why-choose-trust-metrics { 
+                img {
+                    height: 80px;
+            }
+        }
+        }
+    }
+}

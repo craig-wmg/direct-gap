@@ -139,3 +139,94 @@
         padding: 15px 0px;
     }
 }
+
+
+
+
+@media screen and (max-width: 992px) {
+
+.intro-section {
+
+    .monthly-payments-box {
+        .monthly-payments-benefits { 
+            flex-wrap: wrap;
+            justify-content: left;
+
+            span {
+                text-align: left;
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                display: block;
+                &:nth-child(1) {
+                    padding-bottom: 20px;
+                    margin-left: -18px;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .what-is-gap {
+        flex-wrap: wrap;
+
+        .what-is-graphic {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        >div {
+            width: 100%;
+        }
+    }
+}
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .intro-section {
+    
+        .what-is-gap {
+    
+            .what-is-graphic {
+                >div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    >a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 364px) {
+
+    .intro-section {
+    
+        .monthly-payments-box {
+            .monthly-payments-benefits { 
+                span {
+                    display: flex;
+                    text-align: left;
+                    &:nth-child(1) {
+                        padding-bottom: 20px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .what-is-gap {
+            flex-wrap: wrap;
+    
+            >div {
+                width: 100%;
+            }
+        }
+    }
+}

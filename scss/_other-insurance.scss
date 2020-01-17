@@ -36,3 +36,20 @@
             }
         }
     }
+
+@media screen and (max-width: 500px) {
+    .other-insurance-section {
+    
+        .primary-heading {
+            padding: 30px 15px;
+        }
+        > div {
+                .other-insurance-tile {
+                    background-color: white;
+                    width: 260px;
+                    height: 400px;
+                    margin: 8px;
+                }
+        }
+    }
+}

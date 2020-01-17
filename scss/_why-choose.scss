@@ -39,3 +39,18 @@
         margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .why-choose-direct-gap {
+        > div{
+            .why-choose-tiles {
+                .why-choose-tile {
+                    width: 135px;
+                    img {
+                        max-width: 55%
+                    }
+                }
+            }
+        }
+    }
+}
