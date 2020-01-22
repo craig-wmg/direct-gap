@@ -795,6 +795,7 @@ body {
   background-color: #f3f3f3;
   padding-top: 25px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .gap-insurance-services .service-tiles .service-tile {
