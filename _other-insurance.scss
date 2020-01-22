@@ -1,0 +1,55 @@
+.other-insurance-section {
+    background-color: $primary-blue;
+    padding-bottom: 40px;
+
+    .primary-heading {
+        color: white;
+        padding-top: 45px;
+    }
+    > div {
+        max-width: $main-container;
+        margin: 0 auto;
+        text-align: center;
+
+            .other-insurance-tile {
+                background-color: white;
+                width: 340px;
+                height: 380px;
+                margin: 10px;
+                padding: 0px 13px;
+                transition: 0.3s;
+
+                img {
+                    margin-top: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    -moz-transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                    transition: 0.3s;
+                    transform: scale(1.035);
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 500px) {
+    .other-insurance-section {
+    
+        .primary-heading {
+            padding: 30px 15px;
+        }
+        > div {
+                .other-insurance-tile {
+                    background-color: white;
+                    width: 260px;
+                    height: 400px;
+                    margin: 8px;
+                }
+        }
+    }
+}

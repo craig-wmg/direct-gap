@@ -1,0 +1,80 @@
+.why-choose-direct-gap {
+    background-color: $grey-bg;
+    padding-bottom: 30px;
+
+    > div {
+        max-width: $main-container;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            padding-top: 30px;
+        }
+
+        .why-choose-tiles {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    
+            .why-choose-tile {
+                background-color: white;
+                color: $primary-blue;
+                width: 200px;
+                margin: 10px;
+                padding: 10px;
+                height: 220px;
+
+                img {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .blue-cta {
+        display: block;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .why-choose-direct-gap {
+        > div{
+            .why-choose-tiles {
+                .why-choose-tile {
+                    width: 135px;
+                    img {
+                        max-width: 55%
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .why-choose-direct-gap > div .why-choose-tiles .why-choose-tile {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        img {
+            width: 75px;
+            margin-right: 15px;
+            margin-left: 5px;
+            margin-top: 0;
+        }
+    }
+    .why-choose-direct-gap {
+        .blue-cta {
+            margin: 20px 10px 0px 10px;
+        }
+    }
+}
