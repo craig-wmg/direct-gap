@@ -40,6 +40,7 @@
     }
 }
 
+
 @media screen and (max-width: 992px) {
     .why-choose-direct-gap {
         > div{
@@ -51,6 +52,29 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .why-choose-direct-gap > div .why-choose-tiles .why-choose-tile {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        img {
+            width: 75px;
+            margin-right: 15px;
+            margin-left: 5px;
+            margin-top: 0;
+        }
+    }
+    .why-choose-direct-gap {
+        .blue-cta {
+            margin: 20px 10px 0px 10px;
         }
     }
 }

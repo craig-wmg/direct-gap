@@ -124,6 +124,20 @@
             font-size: 12pt;
         }
     }
+    .hero-banner {
+        #banner-quote {
+            .inner {
+                span:nth-child(1) {
+                    font-size: 30px;
+                }
+                .heading-bottom-text {
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {

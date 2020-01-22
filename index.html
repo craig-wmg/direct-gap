@@ -418,10 +418,10 @@
                     <h2 class="primary-heading">What are the different types of gap insurance?</h2>
                     <p>Here at Direct Gap, we pride ourselves on our ability to offer a tailored gap insurance policy that’s perfectly suited to you and your needs. To that end, we offer a range of different products designed to meet your specific requirements:</p>
                     <ul>
-                        <li>Finance/Contract Hire: If your vehicle is declared a total loss, this type of gap insurance will pay the balance between your motor insurer’s settlement and the amount you have left to pay on your finance agreement. It includes all drivers on your policy, you can be covered for one to five years and it also provides protection of any factory fitted options you may have added to the vehicle.</li>
-                        <li>Return to Invoice +: Should your car be written off in an accident or stolen, our Return to Invoice + policy will pay the difference between the settlement you receive from your motor insurer and the amount you paid for the car in the first place. This policy is applicable to both new and used cars, is transferrable free-of-charge and we also offer a 30-day money back guarantee.</li>
-                        <li>Vehicle Replacement +: With this policy, our pay-out will cover the difference between your insurer’s settlement at the point of total loss and the cost of a replacement vehicle matching the car’s original specifications. Our Vehicle Replacement + policy will cover any dealer’s discounts as well as any increase in the car’s list price.</li>
-                        <li>Agreed Value: Should your car be declared a total loss, our Agreed Value gap insurance will pay the difference between your motor insurer’s settlement and 100% of the Glass’s Guide retail price at the time you bought the policy. Our Agreed Value insurance provides cover for one to four years, is transferrable for free and protects you if your vehicle is lost through the theft of your keys.</li>
+                        <li><span>Finance/Contract Hire:</span> If your vehicle is declared a total loss, this type of gap insurance will pay the balance between your motor insurer’s settlement and the amount you have left to pay on your finance agreement. It includes all drivers on your policy, you can be covered for one to five years and it also provides protection of any factory fitted options you may have added to the vehicle.</li>
+                        <li><span>Return to Invoice +:</span> Should your car be written off in an accident or stolen, our Return to Invoice + policy will pay the difference between the settlement you receive from your motor insurer and the amount you paid for the car in the first place. This policy is applicable to both new and used cars, is transferrable free-of-charge and we also offer a 30-day money back guarantee.</li>
+                        <li><span>Vehicle Replacement +:</span> With this policy, our pay-out will cover the difference between your insurer’s settlement at the point of total loss and the cost of a replacement vehicle matching the car’s original specifications. Our Vehicle Replacement + policy will cover any dealer’s discounts as well as any increase in the car’s list price.</li>
+                        <li><span>Agreed Value:</span> Should your car be declared a total loss, our Agreed Value gap insurance will pay the difference between your motor insurer’s settlement and 100% of the Glass’s Guide retail price at the time you bought the policy. Our Agreed Value insurance provides cover for one to four years, is transferrable for free and protects you if your vehicle is lost through the theft of your keys.</li>
                     </ul>
                 </div>
         </div>
@@ -441,10 +441,10 @@
                     <h2 class="primary-heading">Are there any exclusions?</h2>
                     <p>There are some circumstances in which your gap insurance would not cover you, or in which you would be unable to take out the policy in the first place. These include:</p>
                     <ul>
-                        <li>Driving under the influence: If the total loss of your car is caused by the driver of your vehicle being under the influence of drugs, alcohol or prescribed medication (where the person in question has been advised against getting behind the wheel by a medical professional), your gap insurance policy will be void.</li>
-                        <li>Negligence: If your car is stolen due to negligence on your part, for example if you leave the keys in the vehicle, your gap insurance will not cover you.</li>
-                        <li>Hire and reward schemes: If you are a taxi driver, haulier or courier, for example, our gap insurance products will not be applicable to you.</li>
-                        <li>Vehicle age and mileage: Any car over 10 years old or with more than 100,000 miles on the clock at the time of purchase will not qualify for gap insurance.</li>
+                        <li><span>Driving under the influence:</span> If the total loss of your car is caused by the driver of your vehicle being under the influence of drugs, alcohol or prescribed medication (where the person in question has been advised against getting behind the wheel by a medical professional), your gap insurance policy will be void.</li>
+                        <li><span>Negligence:</span> If your car is stolen due to negligence on your part, for example if you leave the keys in the vehicle, your gap insurance will not cover you.</li>
+                        <li><span>Hire and reward schemes:</span> If you are a taxi driver, haulier or courier, for example, our gap insurance products will not be applicable to you.</li>
+                        <li><span>Vehicle age and mileage:</span> Any car over 10 years old or with more than 100,000 miles on the clock at the time of purchase will not qualify for gap insurance.</li>
                     </ul>
                 </div>
         </div>
@@ -634,10 +634,11 @@ for (i = 0; i < acc.length; i++) {
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
-      panel.style.padding = null;
+      setTimeout(function () {panel.style.padding = null;
+      }, 160);
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.padding = "40px 0px";
+      panel.style.padding = "25px 0px";
     } 
   });
 }

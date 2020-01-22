@@ -289,23 +289,11 @@
   }
 
 
-@media screen and (max-width: 441px) {
-    .call-cta .call-cta-phone-no {
-        font-size: 12pt;
-        padding: 4px 0px;
-    }
-    .phone-icon-blue > svg {
-        display: none;
-    }
-    .call-cta .phone-icon-blue {
-        padding: 0;
-    }
-}
 
 @media screen and (max-width: 670px) {
 
     #nav-burger-icon {
-        transform: scale(0.7);
+        transform: scale(0.5);
     }
 
     .navbar-main-nav .navbar-main-nav-container .navbar-get-quote-cta {
@@ -343,6 +331,35 @@
         }
     }
 }
+
+@media screen and (max-width: 441px) {
+    .call-cta .call-cta-phone-no {
+        font-size: 12pt;
+        padding: 4px 0px;
+    }
+    .phone-icon-blue > svg {
+        display: none;
+    }
+    .call-cta .phone-icon-blue {
+        padding: 0;
+    }
+    .main-nav-logo img {
+        max-width: 150px;
+    }
+    .call-cta-mob > div {
+        padding: 0;
+    }
+    .navbar-main-nav .navbar-main-nav-container .navbar-get-quote-cta {
+        padding: 10px;
+        width: 50%;
+        font-size: 18px;
+    }
+    .call-cta-mob {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
 
 @media screen and (min-width: 670px) {
     .call-cta-mob {display: none;}

@@ -95,3 +95,10 @@ body {
         transition-timing-function: ease-out;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .primary-heading {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+}
