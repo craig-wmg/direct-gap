@@ -1464,7 +1464,7 @@ body > div.faq-section > button:nth-child(9).active {
   .faq-section .faq-question > div {
     max-width: 100%;
     width: 100%;
-    padding: 0px 15px;
+    padding: 25px 15px;
   }
   .faq-section .faq-question > div .primary-heading {
     text-align: center;
