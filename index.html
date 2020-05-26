@@ -632,14 +632,17 @@ for (faqi = 0; faqi < faqacc.length; faqi++) {
     faqacc[faqi].addEventListener("click", function() {
     this.classList.toggle("active");
     var faqpanel = this.nextElementSibling;
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
     if (faqpanel.style.maxHeight) {
         faqpanel.style.maxHeight = null;
       setTimeout(function () {faqpanel.style.padding = null;
       }, 160);
     } else {
-        setTimeout(function () {
+            if(isSafari){ 
+                    faqpanel.style.maxHeight = "100%";
+        } else {
         faqpanel.style.maxHeight = faqpanel.scrollHeight + "px";
-        }, 50);
+        }
     } 
   });
 }
