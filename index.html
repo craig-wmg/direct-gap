@@ -625,20 +625,19 @@ $('#finance-purchase-btn').click(function() {
 });
 
 
-var acc = document.getElementsByClassName("faq-accordion");
-var i;
+var faqacc = document.getElementsByClassName("faq-accordion");
+var faqi;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (faqi = 0; faqi < faqacc.length; faqi++) {
+    faqacc[faqi].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      setTimeout(function () {panel.style.padding = null;
+    var faqpanel = this.nextElementSibling;
+    if (faqpanel.style.maxHeight) {
+        faqpanel.style.maxHeight = null;
+      setTimeout(function () {faqpanel.style.padding = null;
       }, 160);
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.padding = "25px 0px";
+        faqpanel.style.maxHeight = faqpanel.scrollHeight + "px";
     } 
   });
 }
