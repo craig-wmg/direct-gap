@@ -637,7 +637,9 @@ for (faqi = 0; faqi < faqacc.length; faqi++) {
       setTimeout(function () {faqpanel.style.padding = null;
       }, 160);
     } else {
+        setTimeout(function () {
         faqpanel.style.maxHeight = faqpanel.scrollHeight + "px";
+        }, 50);
     } 
   });
 }
