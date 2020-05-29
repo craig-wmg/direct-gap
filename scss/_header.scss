@@ -1,4 +1,11 @@
-.navbar {margin-top: 8px;}
+.navbar {
+    padding-top: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999999;
+    background-color: white;
+}
 
 .navbar-top-section {
     background-color: white; 
@@ -51,6 +58,8 @@
         color: #575757;
     }
 }
+
+.call-cta-mob {display: none;}
 
 .main-nav-logo img {
     max-width: 250px;
@@ -158,6 +167,10 @@
     }
 }
 
+#gap-insurance-nav > a {
+    text-decoration: none;
+}
+
 .navbar-usps {
     background-color: white;
     padding: 0px 15px;
@@ -245,6 +258,7 @@
     display: block;
     transition: 0.2s;
     width: 270px;
+    border-bottom: 1px solid #8baec3;
   }
   
   .sidenav a:hover {
@@ -258,16 +272,18 @@
     font-size: 36px;
     margin-right: 50px;
     width: 50px;
+    border-bottom: none;
   }
 
   .sidenav.sidenav-active {
-      width: 270px;
+      width: 310px;
   }
   
   #mobile-sidenav > .mobile-sidenav-about,#mobile-sidenav > .mobile-sidenav-cover,#mobile-sidenav > .mobile-sidenav-gap {
     display: none;
     padding-left: 50px;
     font-size: 14pt;
+    background-color: #06405d;
 }
 
 .mobile-sidenav-sub-active {
@@ -309,6 +325,7 @@
         display: none;
     }
     .call-cta-mob {
+        display: flex;
         width: 50%;
         background-color: white;
 
@@ -358,11 +375,6 @@
         width: 50%;
         padding: 10px;
     }
-}
-
-
-@media screen and (min-width: 670px) {
-    .call-cta-mob {display: none;}
 }
 
 @media screen and (max-width: 768px) {

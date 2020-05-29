@@ -2,6 +2,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 200px;
 }
 
 .primary-heading {
@@ -70,6 +71,18 @@ body {
   -webkit-transform: rotate(-45deg);
 }
 
+.right-arrow-icon-small.arrow-mobile {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: middle;
+  transform: rotate(45deg) scale(1.4);
+  -webkit-transform: rotate(45deg) scale(1.4);
+  margin-top: -7px;
+  margin-left: 5px;
+}
+
 .hvr-icon-forward {
   display: inline-block;
   vertical-align: middle;
@@ -100,6 +113,18 @@ body {
   transition-timing-function: ease-out;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 145px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  body {
+    margin-top: 142px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .primary-heading {
     font-size: 28px;
@@ -107,8 +132,19 @@ body {
   }
 }
 
+@media screen and (max-width: 441px) {
+  body {
+    margin-top: 119px;
+  }
+}
+
 .navbar {
-  margin-top: 8px;
+  padding-top: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999999;
+  background-color: white;
 }
 
 .navbar-top-section {
@@ -186,6 +222,10 @@ body {
 .call-cta .call-cta-times {
   font-size: 9pt;
   color: #575757;
+}
+
+.call-cta-mob {
+  display: none;
 }
 
 .main-nav-logo img {
@@ -314,6 +354,10 @@ body {
   background-image: linear-gradient(to bottom, #ffc400, #ffac00);
 }
 
+#gap-insurance-nav > a {
+  text-decoration: none;
+}
+
 .navbar-usps {
   background-color: white;
   padding: 0px 15px;
@@ -414,6 +458,7 @@ body {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   width: 270px;
+  border-bottom: 1px solid #8baec3;
 }
 
 .sidenav a:hover {
@@ -427,16 +472,18 @@ body {
   font-size: 36px;
   margin-right: 50px;
   width: 50px;
+  border-bottom: none;
 }
 
 .sidenav.sidenav-active {
-  width: 270px;
+  width: 310px;
 }
 
 #mobile-sidenav > .mobile-sidenav-about, #mobile-sidenav > .mobile-sidenav-cover, #mobile-sidenav > .mobile-sidenav-gap {
   display: none;
   padding-left: 50px;
   font-size: 14pt;
+  background-color: #06405d;
 }
 
 .mobile-sidenav-sub-active {
@@ -479,6 +526,9 @@ body {
     display: none;
   }
   .call-cta-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 50%;
     background-color: white;
   }
@@ -529,12 +579,6 @@ body {
   .call-cta-mob {
     width: 50%;
     padding: 10px;
-  }
-}
-
-@media screen and (min-width: 670px) {
-  .call-cta-mob {
-    display: none;
   }
 }
 
