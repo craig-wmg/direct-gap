@@ -1,0 +1,240 @@
+.hero-banner {
+    position: relative;
+    box-sizing: border-box;
+    background-color: $primary-blue;
+    text-align: right;
+    background-image: url('../assets/img/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto 50vw;
+    padding-top: 50vw;
+    .cover-and-save-roundal {
+        position: absolute;
+        background-image: url('../assets/svg/roundal.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 181px;
+        right: 370px;
+        z-index: 999;
+        top: -50px;
+
+        p {
+            width: 250px;
+            color: white;
+            padding: 14px 61px 18px 32px;
+            text-align: center;
+            font-size: 12pt;
+        }
+    }
+    #banner-quote {
+        
+        .inner {
+
+            font-size: 35px;
+            position: relative;
+
+            .heading-bottom-text {
+                font-size: 50px;
+                font-weight: 600;
+            }
+        }
+        .getQuoteForm {
+
+            #Content_ucF_lb {
+                display: none;
+            }
+
+            .contourNavigation {
+                &:after {
+                    -webkit-transform: translateZ(0) rotate(45deg);
+                    transform: translateZ(0) rotate(45deg);
+                    -webkit-transition-duration: 0.1s;
+                    transition-duration: 0.1s;
+                    -webkit-transition-property: transform;
+                    transition-property: transform;
+                    -webkit-transition-timing-function: ease-out;
+                    transition-timing-function: ease-out;
+                    top: 25px;
+                    border-width: 3px 3px 0 0;
+                }
+                &:hover {
+                    #Content_ucF_btnGetAQuote  {
+                    background-image: $gold-background-hover;
+                    }
+                    &:after {
+                        transform: translateX(5px) rotate(45deg);
+                        -webkit-transform: translateX(5px) rotate(45deg);
+                        cursor: pointer;
+                    }
+                }
+                #Content_ucF_btnGetAQuote {
+                    background-image: $gold-background;
+                    color: $primary-blue;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .hero-trust-metrics {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            a {
+                max-width: 180px;
+                margin: 0px 10px;
+            
+                img {
+                    z-index: 10;
+                    position: relative;
+                }
+            }
+        }
+
+        .getQuoteForm::after {
+            display: none !important;
+        }
+    }
+}
+
+.moduleText {
+
+    p {
+        font-size: 12pt;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .moduleText {
+
+        p {
+            font-size: 12pt;
+        }
+    }
+    .hero-banner {
+        #banner-quote {
+            .inner {
+                span:nth-child(1) {
+                    font-size: 30px;
+                }
+                .heading-bottom-text {
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-banner {
+        .cover-and-save-roundal {
+            display: none;
+        }
+    }
+    body .hero-banner #banner-quote {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    body .hero-banner { 
+        background-size: contain !important;
+        padding-top: 0vw !important;
+        background-position: top left !important;
+        background-image: none;
+
+        #banner-quote::before {
+        display: none;
+    }
+    #banner-quote > * {
+        max-width: 100% !important;
+        text-align: center;
+    }
+    #banner-quote .moduleText {
+        margin-right: 0 !important;
+    }
+    
+}
+.hero-banner #banner-quote .hero-trust-metrics {
+    justify-content: space-around;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+body .hero-banner #banner-quote::before {
+    left: -174px;
+    top: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 0px solid transparent;
+    border-left: 175px solid transparent;
+    border-top: 491px solid #0e3260;
+    content: '';
+}
+}
+
+@media screen and (min-width: 768px) {
+    body .hero-banner {
+        padding: 0;
+        background-position: 0;
+        background-size: auto 114%;
+
+        #banner-quote {
+            background: $primary-blue;
+            position: relative;
+            margin-left:20px;
+            width: 47vw;
+        }
+        #banner-quote::before {
+            left: 64px;
+            top: -3px;
+            position: absolute;
+            width: 78%;
+            height: 0;
+            border-top: 800px solid #0e3260;
+            content: "";
+            transform-origin: left bottom;
+            transform: skewx(18deg);
+            z-index: 0;
+            background: #0e3260;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .moduleText {
+
+        p {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero-banner{
+        background-position: left;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body .hero-banner {
+        background-size: auto 36vw;
+    }
+}

@@ -1,0 +1,77 @@
+.why-choose-bottom {
+    background-color: $grey-bg;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .why-choose-bottom-container {
+        max-width: $main-container;
+        margin: 0 auto;
+
+        > p {
+            text-align: center;
+            font-size: 18px;
+            color: $primary-blue;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            columns: 2;
+          }
+          
+          ul li {
+            padding-left: 2rem;
+            background-image: url('../assets/svg/tick.svg');
+            background-position: 23px 0;
+            background-size: 1.6rem 1.6rem;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+            padding-left: 60px;
+            color: $primary-blue;
+
+            span {
+                font-weight: 700;
+            }
+          }
+          .gold-cta {
+            display: block;
+            width: 100%;
+            max-width: 350px;
+            font-size: 20px;
+            padding: 15px 0px;
+            margin: 20px auto;
+        }
+        .why-choose-trust-metrics {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 600px;
+            justify-content: center;
+            margin: 0 auto;
+
+            img {
+                height: 100px;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .why-choose-bottom {
+        padding: 40px 15px;
+    
+        .why-choose-bottom-container {
+
+            ul {
+                columns: 1;
+                padding-left: 0;
+              }
+            .why-choose-trust-metrics { 
+                img {
+                    height: 80px;
+            }
+        }
+        }
+    }
+}

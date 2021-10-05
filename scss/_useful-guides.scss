@@ -1,0 +1,61 @@
+.need-help-section {
+    background-color: white;
+    padding-top: 40px;
+
+    .useful-guide-tiles {
+
+        .useful-guide-tile {
+            width: 285px;
+            height: 320px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 10px;
+            padding-left: 10px;
+            transition: 0.3s;
+
+            &:hover {
+                -moz-transition: 0.3s;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                transform: scale(1.035);
+            }
+        }
+        .why-direct-gap-tile {
+            background-image: url('../assets/img/smiling-driver.png');
+        }
+        .what-is-gap-tile {
+            background-image: url('../assets/img/gap-car.png');
+            background-position: 50% 25%;
+        }
+        .general-exclusions-tile {
+            background-image: url('../assets/img/car-dash.png');
+        }
+        .which-policy-tile {
+            background-image: url('../assets/img/insurance-docs.png');
+        }
+
+        h2 {
+            margin-top: 215px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .need-help-section {
+        background-color: white;
+        padding-top: 40px;
+    
+        .useful-guide-tiles {
+    
+            .useful-guide-tile {
+                width: 260px;
+                height: 300px;
+            }
+            h2 {
+                margin-top: 200px;
+                font-size: 20px;
+            }
+        }
+    }
+    
+}
